@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace ServiceWorkerCronJobDemo.Services
+namespace ServiceWorkerCronJob.Services
 {
     public class MyCronJob1 : CronJobService
     {

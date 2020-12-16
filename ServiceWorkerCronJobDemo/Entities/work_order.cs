@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ServiceWorkerCronJobDemo.Entities
+namespace ServiceWorkerCronJob.Entities
 {
     public class work_order
     {

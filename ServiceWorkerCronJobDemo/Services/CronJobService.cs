@@ -5,7 +5,7 @@ using Cronos;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace ServiceWorkerCronJobDemo.Services
+namespace ServiceWorkerCronJob.Services
 {
     public abstract class CronJobService : IHostedService, IDisposable
     {

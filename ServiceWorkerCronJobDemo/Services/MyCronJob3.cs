@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
-namespace ServiceWorkerCronJobDemo.Services
+namespace ServiceWorkerCronJob.Services
 {
     public class MyCronJob3 : CronJobService
     {

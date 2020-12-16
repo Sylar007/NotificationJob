@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ServiceWorkerCronJobDemo.Entities
+namespace ServiceWorkerCronJob.Entities
 {
     public class notification_type
     {

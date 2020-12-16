@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using ServiceWorkerCronJobDemo.Entities;
-using ServiceWorkerCronJobDemo.Helpers;
+using ServiceWorkerCronJob.Entities;
+using ServiceWorkerCronJob.Helpers;
 
-namespace ServiceWorkerCronJobDemo.Services
+namespace ServiceWorkerCronJob.Services
 {
     public class NotificationService : INotificationService
     {

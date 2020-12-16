@@ -1,4 +1,4 @@
-namespace ServiceWorkerCronJobDemo.Helpers
+namespace ServiceWorkerCronJob.Helpers
 {
     public class AppSettings
     {

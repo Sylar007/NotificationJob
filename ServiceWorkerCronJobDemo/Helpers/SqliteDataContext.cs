@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
-namespace ServiceWorkerCronJobDemo.Helpers
+namespace ServiceWorkerCronJob.Helpers
 {
     public class SqliteDataContext : DataContext
     {

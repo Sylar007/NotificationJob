@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using ServiceWorkerCronJobDemo.Entities;
+using ServiceWorkerCronJob.Entities;
 
-namespace ServiceWorkerCronJobDemo.Helpers
+namespace ServiceWorkerCronJob.Helpers
 {
     public class DataContext : DbContext
     {

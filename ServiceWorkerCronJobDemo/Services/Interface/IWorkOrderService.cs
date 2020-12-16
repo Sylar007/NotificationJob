@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ServiceWorkerCronJobDemo.Entities;
+using ServiceWorkerCronJob.Entities;
 
-namespace ServiceWorkerCronJobDemo.Services
+namespace ServiceWorkerCronJob.Services
 {
     public interface IWorkOrderService
     {

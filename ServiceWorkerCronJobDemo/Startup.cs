@@ -5,10 +5,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using ServiceWorkerCronJobDemo.Helpers;
-using ServiceWorkerCronJobDemo.Services;
+using ServiceWorkerCronJob.Helpers;
+using ServiceWorkerCronJob.Services;
 
-namespace ServiceWorkerCronJobDemo
+namespace ServiceWorkerCronJob
 {
     public class Startup
     {
