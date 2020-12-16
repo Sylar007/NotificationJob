@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ServiceWorkerCronJob.Helpers;
+using ServiceWorkerCronJob.Model;
 using ServiceWorkerCronJob.Services;
 
 namespace ServiceWorkerCronJob
@@ -28,9 +29,16 @@ namespace ServiceWorkerCronJob
             services.Configure<AppSettings>(appSettingsSection);
 
             var appSettings = appSettingsSection.Get<AppSettings>();
-          
+
+            var notificationMetadata =
+                Configuration.GetSection("NotificationMetadata").
+                Get<NotificationMetadata>();
+            services.AddSingleton(notificationMetadata);
+            services.AddControllers();
+
             services.AddScoped<IMyScopedService, MyScopedService>();
             services.AddScoped<IWorkOrderService, WorkOrderService>();
+            services.AddScoped<INotificationService, NotificationService>();
             services.AddCronJob<MyCronJob1>(c =>
             {
                 c.TimeZoneInfo = TimeZoneInfo.Local;
@@ -39,7 +47,7 @@ namespace ServiceWorkerCronJob
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, DataContext dataContext)
-        {           
+        {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
